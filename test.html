@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>My first reveal.js!</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>我叫作毛弘仁</section>
+				<section data-background-image="https://media.giphy.com/media/14urMYvFxIKEms/giphy.gif" data-background-transition="zoom">我在玩reveal.js</section>
+				<section>
+					<section>人是<p class="fragment highlight-blue">好色</p>的動物
+					</section>
+					<section>
+						<h3>This is my video</h3>
+						<iframe class="stretch" width="560" height="315" src="https://www.youtube.com/embed/-5ZbkANMGiM" frameborder="0" allowfullscreen></iframe>
+					</section>
+					<section>
+						<h2><strong>這是我的貓</strong></h2>
+						<img class="stretch" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg">
+					</section>
+				</section>
+				<section data-background-image="http://slodive.com/wp-content/uploads/2012/02/pretty-backgrounds/forest-subway.jpg" data-background-repeat="repeat" data-background-size="700px" data-background-transition="convex">來個背景</section>
+				<section>
+					<h2>我們做到了什麼</h2>
+					<form>
+						<input type="checkbox">一件很厲害的事
+						<br>
+						<input type="checkbox">兩件很厲害的事
+					</form>
+				</section>
+				<section>
+					<code class="files">whatever.js</code>
+					<code style="font-size: 36px; padding: 20px 20px;" class="c++ hljs " data-trim="" contenteditable=""><span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Hello, World!"</span>;</code>
+				</section>
+				<section class="present" style="top: 126px; display: block;">
+		            <h2>Practice Time</h2>
+		            <ul>
+		              <li>
+		                在之前的 <code class="files">my_project</code> 的
+		                <code class="files">master</code> 中
+		                <code class="command">merge</code>
+		                <code class="files">cpp-dev</code>
+		                看看
+		              </li>
+		              <li>
+		                在 <code class="files">master</code> 修改
+		                <code class="files">main.cpp</code> 並加入 SA &amp;
+		                <code class="command">commit</code>
+		              </li>
+		              <li>
+		                <code class="command">checkout</code> 到
+		                <code class="files">cpp-dev</code> 在
+		                <code class="files">main.cpp</code> 做一點不同的修改並加入 SA &amp;
+		                <code class="command">commit</code>
+		              </li>
+		              <li>
+		                <code class="command">checkout</code> 回
+		                <code class="files">master</code> 並試著去
+		                <code class="command">merge</code>
+		                <code class="files">cpp-dev</code>
+		              </li>
+		              <li>
+		                由於 conflict 因此必須手動處理，使用
+		                <code class="command">mergetool</code>
+		              </li>
+		              <li>
+		                處理好後就可以將修改好的檔案 <code class="command">add</code>
+		                進 SA 並 <code class="command">comit</code>
+		              </li>
+		            </ul>
+		        </section>
+		        <section>
+		        	<img class="stretch" src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+		        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true, transition: 'convex',
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
